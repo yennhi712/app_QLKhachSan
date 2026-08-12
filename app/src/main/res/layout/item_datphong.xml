@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:layout_marginBottom="12dp"
+    android:weightSum="5"
+    android:background="@drawable/border_phong"
+    android:gravity="center_vertical">
+
+    <!-- Tên phòng -->
+    <TextView
+        android:id="@+id/tvTenPhong"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:text="P201"
+        android:textSize="13sp" />
+
+    <!-- Loại phòng -->
+    <TextView
+        android:id="@+id/tvLoaiPhong"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:text="Phòng đôi"
+        android:textSize="13sp" />
+
+    <!-- Giá -->
+    <TextView
+        android:id="@+id/tvGia"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.2"
+        android:gravity="center"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:text="700.000đ"
+        android:textSize="13sp" />
+
+    <!-- Trạng thái -->
+    <TextView
+        android:id="@+id/tvTrangThai"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:text="Trống"
+        android:textColor="#00AA00"
+        android:textSize="13sp" />
+
+    <!-- Hành động -->
+    <LinearLayout
+        android:id="@+id/btnContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/btnDat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="[Đặt]"
+            android:textColor="#0288D1"
+            android:textSize="13sp"
+            android:paddingHorizontal="2dp" />
+
+
+        <TextView
+            android:id="@+id/btnTraPhong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[Trả phòng]"
+        android:textColor="#D32F2F"
+        android:visibility="gone"
+        android:textSize="13sp"
+        android:paddingHorizontal="2dp"
+        android:layout_marginStart="4dp" />
+    </LinearLayout>
+</LinearLayout>

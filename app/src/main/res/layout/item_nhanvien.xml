@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:gravity="center_vertical">
+
+    <!-- Cột bên trái: Thông tin nhân viên -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtMaNV"
+            android:text="Mã NV: NV001"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtHoTen"
+            android:text="Họ tên: Nguyễn Văn A"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" />
+
+        <TextView
+            android:id="@+id/txtChucVu"
+            android:text="Chức vụ: Nhân viên"
+            android:textSize="14sp"
+            android:textColor="#444444"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp" />
+    </LinearLayout>
+
+    <!-- Cột bên phải: 2 nút Sửa và Xoá -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnSua"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:text="✏️"
+            android:backgroundTint="#3B82F6"
+            android:textColor="#FFFFFF"
+            android:layout_marginEnd="8dp"
+            android:padding="0dp" />
+
+        <Button
+            android:id="@+id/btnXoa"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:text="🗑️"
+            android:backgroundTint="#EF4444"
+            android:textColor="#FFFFFF"
+            android:padding="0dp" />
+    </LinearLayout>
+</LinearLayout>

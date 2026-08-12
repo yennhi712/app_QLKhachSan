@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edtTenKhach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tên khách"
+        android:textSize="20sp"
+        android:paddingBottom="12dp" />
+
+    <EditText
+        android:id="@+id/edtSDT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Số điện thoại"
+        android:textSize="20sp"
+        android:paddingBottom="12dp" />
+
+    <EditText
+        android:id="@+id/edtCCCD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CCCD"
+        android:textSize="20sp"
+        android:paddingBottom="12dp" />
+
+    <!-- Ngày đặt -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày đặt:"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/txtNgayDat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--/--/----"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <!-- Ngày trả -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ngày trả:"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginEnd="8dp" />
+
+        <TextView
+            android:id="@+id/txtNgayTra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="--/--/----"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

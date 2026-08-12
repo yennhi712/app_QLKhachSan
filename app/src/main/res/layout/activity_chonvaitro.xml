@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/travel_background">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center"
+        android:background="@drawable/custom_edittext"
+        android:padding="24dp"
+        android:elevation="6dp"
+        android:layout_margin="16dp"
+        android:clipToPadding="false">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:src="@drawable/outline_business_24"
+                app:tint="@color/blue_600"
+                android:layout_marginEnd="12dp" />
+
+            <TextView
+                android:text="Hotel Manager"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/gray_900"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:text="Hệ thống quản lý khách sạn"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+        <!-- Role Cards -->
+        <LinearLayout
+            android:id="@+id/card_container"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"
+            android:weightSum="2"
+            android:padding="8dp">
+        </LinearLayout>
+
+        <!-- Continue Button -->
+        <Button
+            android:id="@+id/btn_continue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tiếp tục"
+            android:enabled="false"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textSize="16sp"
+            android:backgroundTint="@color/blue_600"
+            android:paddingVertical="12dp" />
+
+        <TextView
+            android:id="@+id/tv_hint"
+            android:text="Vui lòng chọn vai trò để tiếp tục"
+            android:textSize="14sp"
+            android:textColor="@color/red"
+            android:layout_marginTop="8dp"
+            android:visibility="visible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</ScrollView>

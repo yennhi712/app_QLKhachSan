@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="blue">#28B6E9</color>
+
+
+        <color name="blue_50">#EFF6FF</color>
+        <color name="blue_500">#3B82F6</color>
+        <color name="blue_600">#2563EB</color>
+        <color name="blue_700">#00E5FF</color>
+        <color name="blue_100">#BBDEFB</color>
+        <color name="teal_700">#018786</color>
+
+        <color name="green_500">#46F03D</color>
+        <color name="green_600">#1EBA14</color>
+
+        <color name="gray_300">#D1D5DB</color>
+        <color name="gray_400">#9CA3AF</color>
+        <color name="gray_500">#6B7280</color>
+        <color name="gray_600">#4B5563</color>
+        <color name="gray_800">#1F2937</color>
+
+    <color name="gray_900">#212121</color> <!-- hoặc màu bạn muốn -->
+    <color name="red">#F44336</color>      <!-- đỏ chuẩn Material Design -->
+
+
+
+</resources>

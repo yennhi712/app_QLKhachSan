@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="nagigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_trangchu"
+            android:icon="@drawable/outline_home_24"
+            android:title="Trang chủ"/>
+
+        <item
+            android:id="@+id/nav_khachhang"
+            android:icon="@drawable/baseline_assignment_ind_24"
+            android:title="Khách hàng"/>
+
+        <item
+            android:id="@+id/nav_nhanvien"
+            android:icon="@drawable/baseline_headphones_24"
+            android:title="Nhân viên"/>
+
+        <item
+            android:id="@+id/nav_dichvu"
+            android:icon="@drawable/outline_auto_awesome_24"
+            android:title="Dịch vụ"/>
+
+        <item
+            android:id="@+id/nav_thongke"
+            android:icon="@drawable/outline_assessment_24"
+            android:title="Thống kê"/>
+    </group>
+
+    <item
+        android:title="">
+
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:title="logout">
+
+            </item>
+        </menu>
+    </item>
+
+</menu>

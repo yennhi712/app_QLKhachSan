@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/custom_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#28B6E9"
+    android:padding="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <!-- Thanh tìm kiếm -->
+        <EditText
+            android:id="@+id/etSearch"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:hint="Tìm kiếm"
+            android:background="@drawable/custom_edittext"
+            android:drawableStart="@drawable/baseline_search_24"
+            android:drawablePadding="8dp"
+            android:padding="10dp"
+            android:textColor="#333"
+            android:textSize="14sp"
+            android:singleLine="true" />
+
+        <!-- Icon chuông -->
+        <ImageView
+            android:id="@+id/ivBell"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:src="@drawable/outline_add_alert_24"
+            android:contentDescription="Bell icon" />
+
+    </LinearLayout>
+</androidx.appcompat.widget.Toolbar>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:padding="16dp"
+        android:layout_margin="8dp"
+        android:clipToPadding="false"
+        android:layout_gravity="center"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="#FFFFFF">
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thông tin đặt phòng"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Thông tin khách -->
+        <TextView android:id="@+id/txtTenKhach"
+            style="@style/StyledLabel"
+            android:text="Tên khách: " />
+
+        <TextView android:id="@+id/txtCCCD"
+            style="@style/StyledLabel"
+            android:text="CCCD: " />
+
+        <TextView android:id="@+id/txtSDT"
+            style="@style/StyledLabel"
+            android:text="SĐT: " />
+
+        <!-- Thông tin ngày tháng -->
+        <TextView android:id="@+id/txtNgayDat"
+            style="@style/StyledLabel"
+            android:text="Ngày đặt: " />
+
+        <TextView android:id="@+id/txtNgayHenTra"
+            style="@style/StyledLabel"
+            android:text="Ngày hẹn trả: " />
+
+        <TextView android:id="@+id/txtNgayTraThucTe"
+            style="@style/StyledLabel"
+            android:text="Ngày trả thực tế: " />
+
+        <!-- Tiền thuê và phạt -->
+        <TextView android:id="@+id/txtTienThue"
+            style="@style/StyledLabel"
+            android:text="Tiền thuê cơ bản: " />
+
+        <TextView android:id="@+id/txtSoNgayTre"
+            style="@style/StyledLabel"
+            android:text="Số ngày trễ: " />
+
+        <TextView android:id="@+id/txtTienTre"
+            style="@style/StyledLabel"
+            android:text="Tiền trễ: " />
+
+        <!-- Dịch vụ -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dịch vụ sử dụng"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textColor="#333333" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerDichVu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:nestedScrollingEnabled="false" />
+
+        <TextView
+            android:id="@+id/txtTongTienDichVu"
+            style="@style/StyledLabel"
+            android:text="Tiền dịch vụ: " />
+
+        <!-- Tổng tiền -->
+        <TextView
+            android:id="@+id/txtTongTien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tổng tiền: "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#D32F2F"
+            android:gravity="end"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+    </LinearLayout>
+</ScrollView>

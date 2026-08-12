@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_taoyecaudichVu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFF6FF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="Tạo yêu cầu dịch vụ khách hàng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/edtHoTen"
+                android:hint="Họ tên khách hàng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFFFF"
+                android:enabled="false"
+                android:minHeight="48dp" />
+
+            <Spinner
+                android:id="@+id/spinnerSoPhong"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFFFF"
+                android:minHeight="48dp"
+                android:layout_marginTop="8dp"/>
+
+            <EditText
+                android:id="@+id/edtThoiGian"
+                android:hint="Thời gian tiếp nhận yêu cầu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFFFF"
+                android:focusable="false"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:id="@+id/edtNhanVien"
+                android:hint="Nhân viên tiếp nhận"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFFFF"
+                android:minHeight="48dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="6dp"
+                android:background="#FFFFFFFF"
+                android:layout_marginBottom="8dp">
+
+                <EditText
+                    android:id="@+id/edtNoiDung"
+                    android:hint="Nội dung yêu cầu"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:paddingStart="8dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp" />
+
+                <Spinner
+                    android:id="@+id/spnLoaiDichVu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:text="Danh sách yêu cầu đã ghi nhận"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#00E5FF"
+            android:padding="8dp">
+
+            <TextView
+                android:text="STT"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+            <TextView
+                android:text="Mã yêu cầu"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+            <TextView
+                android:text="Phòng"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+            <TextView
+                android:text="Dịch vụ"
+                android:layout_weight="3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+            <TextView
+                android:text="Hành động"
+                android:layout_weight="2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewYeuCau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFFFF"
+            android:nestedScrollingEnabled="false"
+            android:overScrollMode="never"
+            android:layout_marginBottom="12dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tvTongTien"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Tổng Tiền: 0đ"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnCapNhat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#3B82F6"
+                android:text="Cập Nhật" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

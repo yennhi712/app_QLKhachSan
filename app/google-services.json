@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "58593489",
+    "project_id": "khachsancnpm-755fe",
+    "storage_bucket": "khachsancnpm-755fe.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58593489:android:44231cd280e180d60375f0",
+        "android_client_info": {
+          "package_name": "com.example.khanhsan_cnpm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWhg3x_na5yO0YAv9AeV3y3RFujCv5OfM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

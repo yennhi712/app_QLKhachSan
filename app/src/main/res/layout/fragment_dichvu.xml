@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_DichVu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FAFB">
+
+    <LinearLayout
+        android:id="@+id/layoutMainDichVu"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <Button
+            android:id="@+id/btnTaoYeuCauDichVu"
+            android:text=" ➕ Tạo yêu cầu dịch vụ"
+            android:minHeight="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#28B6E9"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Nhóm tìm kiếm -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="16dp"
+            android:weightSum="5">
+
+            <EditText
+                android:id="@+id/edtTimSoPhong"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="2"
+                android:background="@drawable/bg_input"
+                android:hint="Tất cả phòng"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                android:focusable="false"
+                android:clickable="true" />
+
+            <Spinner
+                android:id="@+id/spnLocDichVu"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="2"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/bg_input" />
+
+            <Button
+                android:id="@+id/btnTim"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:text="🔍"
+                android:textSize="16sp"
+                android:backgroundTint="#28B6E9"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <!-- Tiêu đề -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📋 Danh sách dịch vụ đã đặt"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#111827"
+            android:paddingBottom="8dp" />
+
+        <!-- RecyclerView -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewDichVuDaDat"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:padding="4dp"
+            android:clipToPadding="false"
+            android:nestedScrollingEnabled="true"
+            android:elevation="1dp" />
+    </LinearLayout>
+
+    <!-- Fragment con -->
+    <FrameLayout
+        android:id="@+id/dichvu_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</FrameLayout>

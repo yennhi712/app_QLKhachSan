@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FAFAFA">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:background="@drawable/bg_card"
+        android:elevation="4dp">
+
+        <!-- Hàng chứa Từ ngày và Đến ngày -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_marginBottom="12dp">
+
+            <!-- Từ ngày -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingEnd="5dp">
+
+                <TextView
+                    android:text="Từ ngày:"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:paddingBottom="5dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnChonTuNgay"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chọn ngày bắt đầu"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <!-- Đến ngày -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="8dp">
+
+                <TextView
+                    android:text="Đến ngày:"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:paddingBottom="8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnChonDenNgay"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Chọn ngày kết thúc"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Tùy chọn nhanh -->
+
+        <Spinner
+            android:id="@+id/spTuyChon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:entries="@array/tuychon" />
+
+        <!-- Nút thống kê -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnThongKe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thống kê"
+            style="@style/Widget.MaterialComponents.Button"
+            android:textSize="15sp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Tổng doanh thu -->
+        <TextView
+            android:id="@+id/tvTongDoanhThu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tổng doanh thu: 0đ"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#E91E63"
+            android:gravity="center"
+            android:layout_marginTop="16dp" />
+
+        <!-- Biểu đồ -->
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#F9FAFB">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Fragment container (ẩn mặc định) -->
+        <FrameLayout
+            android:id="@+id/fragment_container_khachhang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone" />
+
+        <!-- Nội dung chính -->
+        <LinearLayout
+            android:id="@+id/layoutNoiDungChinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Tìm kiếm -->
+            <EditText
+                android:id="@+id/edtSearchHoTen"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="🔍 Nhập họ tên..."
+                android:background="@drawable/bg_input"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/edtSearchSDT"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:inputType="phone"
+                android:hint="📞 Nhập SĐT..."
+                android:background="@drawable/bg_input"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/edtSearchCCCD"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="🆔 Nhập CCCD/CMND..."
+                android:background="@drawable/bg_input"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Nút tìm -->
+            <Button
+                android:id="@+id/btnTimKiem"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="🔎 Tìm kiếm"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:backgroundTint="#28B6E9"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Danh sách -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerKhachHang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFF"
+                android:clipToPadding="false"
+                android:padding="4dp"
+                android:elevation="1dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
